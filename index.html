@@ -1,11 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-02</title>
+    <!-- Tailwind CND -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/4755690280.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google font and Internal css-->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .btn-primary {
+        color: white;
+        background-image: linear-gradient(
+          47.64deg,
+          rgba(247, 233, 63, 1),
+          rgba(251, 9, 180, 1),
+          rgba(145, 0, 248, 1)
+        );
+        padding: 10px 16px;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <!-- BODY -->
+  <body>
+    <!-- header section -->
+    <header>
+      <!-- navbar section -->
+      <nav class="text-white bg-[#1a0b2e] flex justify-around py-3">
+        <!-- nav start -->
+        <div class="text-3xl w-fit font-bold flex justify-center items-center">
+          <a href="#">Tech<span class="bg-[linear-gradient(9.64deg,yellow,hotpink,violet)] bg-clip-text text-transparent">Wave</span></a>
+        </div>
+        <!-- nav center -->
+        <div class="hidden w-fit md:flex">
+          <ul class="flex gap-5 p-4">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Episodes</a></li>
+            <li><a href="#">Host</a></li>
+          </ul>
+        </div>
+
+        <!-- nav end -->
+        <div class="hidden w-fit justify-center items-center md:flex">
+          <button class="btn-primary">
+            Subscribe <i class="fa-solid fa-arrow-down -rotate-90"></i>
+          </button>
+        </div>
+          <!-- dropdown menu  -->
+        <div class="flex w-fit justify-center items-center relative group md:hidden">
+          <i class="fa-solid fa-bars text-2xl"></i>
+          <ul class="absolute p-2 text-center rounded-lg right-0 top-2 w-fit bg-[#1a0b2e] shadow hidden group-hover:flex flex-col gap-2 ">
+            <li class="px-2 rounded-sm  hover:bg-pink-500 cursor-pointer"><a href="#">About</a></li>
+            <li class="px-2 rounded-sm  hover:bg-pink-500 cursor-pointer"><a href="#">Episodes</a></li>
+            <li class="px-2 rounded-sm  hover:bg-pink-500 cursor-pointer"><a href="#">Host</a></li>
+            <li class="px-2 cursor-pointer"><a href="#"><button class="btn-primary flex gap-2 cursor-pointer">
+            Subscribe <i class="fa-solid fa-arrow-down -rotate-90"></i></button></a></li> 
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
