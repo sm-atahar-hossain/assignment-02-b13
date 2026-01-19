@@ -1,21 +1,23 @@
 <!doctype html>
 <html lang="en">
+  <!-- HEAD -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment-02</title>
     <!-- Tailwind CND -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/4755690280.js"
       crossorigin="anonymous"
     ></script>
-
     <!-- Google font and Internal css-->
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+      :root{
+        --hero-bg:url("D:\PH-13\assignment-02-b13\assets\hero-bg.png");
+      }
       body {
         font-family: "Inter", sans-serif;
       }
@@ -34,6 +36,7 @@
       }
     </style>
   </head>
+
   <!-- BODY -->
   <body>
     <!-- header section -->
@@ -45,7 +48,7 @@
           <a href="#">Tech<span class="bg-[linear-gradient(9.64deg,yellow,hotpink,violet)] bg-clip-text text-transparent">Wave</span></a>
         </div>
         <!-- nav center -->
-        <div class="hidden w-fit md:flex">
+        <div class="hidden w-fit lg:flex">
           <ul class="flex gap-5 p-4">
             <li><a href="#">About</a></li>
             <li><a href="#">Episodes</a></li>
@@ -54,13 +57,13 @@
         </div>
 
         <!-- nav end -->
-        <div class="hidden w-fit justify-center items-center md:flex">
+        <div class="hidden w-fit justify-center items-center lg:flex">
           <button class="btn-primary">
             Subscribe <i class="fa-solid fa-arrow-down -rotate-90"></i>
           </button>
         </div>
           <!-- dropdown menu  -->
-        <div class="flex w-fit justify-center items-center relative group md:hidden">
+        <div class="flex w-fit justify-center items-center relative group z-1 lg:hidden">
           <i class="fa-solid fa-bars text-2xl"></i>
           <ul class="absolute p-2 text-center rounded-lg right-0 top-2 w-fit bg-[#1a0b2e] shadow hidden group-hover:flex flex-col gap-2 ">
             <li class="px-2 rounded-sm  hover:bg-pink-500 cursor-pointer"><a href="#">About</a></li>
@@ -71,6 +74,29 @@
           </ul>
         </div>
       </nav>
+      <!-- Hero section -->
+      <section class="bg-[url('./assets/hero-bg.png')] bg-cover bg-center bg-no-repeat border-t-2 border-gray-700 text-white flex flex-col justify-center items-center gap-2 py-20 px-7 text-center">
+        <!-- hero icon -->
+        <div class="mb-3 relative">
+          <div class="bg-[url('./assets/hero-circle.png')] bg-contain bg-center bg-no-repeat w-[200px] h-[200px] p-7 flex justify-center items-center md:w-[250px] md:h-[250px]">
+            <img class="w-16 md:w-20" src="./assets/microphone.png" alt="" srcset="">
+          </div>
+          <p class="absolute top-2 right-2 shadow-lg/50 shadow-[#1a0b2e] w-fit text-black font-semibold bg-green-400 px-3 py-1 rounded-3xl text-[10px] md:text-sm lg:text-[16px]">NEW</p>
+        </div>
+         <!-- hero heading -->
+        <div>
+          <h1 class="text-3xl font-bold md:text-4xl">TechWave</h1>
+        </div>
+        <!-- hero para -->
+        <div>
+          <p class="text-sm text-gray-300">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+        </div>
+        <!-- hero button -->
+        <div class="flex justify-center items-center gap-3">
+          <button class="btn-primary flex justify-center items-center gap-3"><img src="./assets/spotify.png" alt="">Listen on Spotify</button>
+          <button class="text-green-500 flex justify-center items-center gap-3 border-2 border-green-500 py-2 px-4 rounded-4xl"><img src="./assets/message.png" alt=""><a href="#">Subscribe</a></button>
+        </div>
+      </section>
     </header>
     <main></main>
     <footer></footer>
