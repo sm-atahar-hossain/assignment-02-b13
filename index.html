@@ -15,12 +15,12 @@
     <!-- Google font and Internal css-->
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-      :root{
-        --hero-bg:url("D:\PH-13\assignment-02-b13\assets\hero-bg.png");
+      :root {
+        --hero-bg: url("D:\PH-13\assignment-02-b13\assets\hero-bg.png");
       }
       body {
         font-family: "Inter", sans-serif;
-        background-color: #1a0b2e;
+        background-color: rgb(18, 0, 42);
         color: white;
       }
       .btn-primary {
@@ -44,17 +44,24 @@
     <!-- header section -->
     <header>
       <!-- navbar section -->
-      <nav class="flex justify-around py-3">
+      <nav class="flex justify-between lg:justify-around p-3 md:px-10">
         <!-- nav start -->
-        <div class="text-4xl lg:text-3xl w-fit font-bold md:font-extrabold flex justify-center items-center">
-          <a href="#">Tech<span class="bg-[linear-gradient(9.64deg,yellow,hotpink,violet)] bg-clip-text text-transparent">Wave</span></a>
+        <div
+          class="text-4xl lg:text-3xl w-fit font-bold md:font-extrabold flex justify-center items-center"
+        >
+          <a href="#"
+            >Tech<span
+              class="bg-[linear-gradient(9.64deg,yellow,hotpink,violet)] bg-clip-text text-transparent"
+              >Wave</span
+            ></a
+          >
         </div>
         <!-- nav center -->
         <div class="hidden w-fit lg:flex">
           <ul class="flex gap-5 p-4">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Episodes</a></li>
-            <li><a href="#">Host</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#episodes">Episodes</a></li>
+            <li><a href="#host">Host</a></li>
           </ul>
         </div>
 
@@ -64,44 +71,129 @@
             Subscribe <i class="fa-solid fa-arrow-down -rotate-90"></i>
           </button>
         </div>
-          <!-- dropdown menu  -->
-        <div class="flex w-fit justify-center items-center relative group z-1 lg:hidden">
+        <!-- dropdown menu  -->
+        <div
+          class="flex w-fit justify-center items-center relative group z-1 lg:hidden"
+        >
           <i class="fa-solid fa-bars text-2xl"></i>
-          <ul class="absolute p-2 text-center rounded-lg right-0 top-2 w-fit bg-[#1a0b2e] shadow hidden group-hover:flex flex-col gap-2 ">
-            <li class="px-2 rounded-sm  hover:bg-pink-500 cursor-pointer"><a href="#">About</a></li>
-            <li class="px-2 rounded-sm  hover:bg-pink-500 cursor-pointer"><a href="#">Episodes</a></li>
-            <li class="px-2 rounded-sm  hover:bg-pink-500 cursor-pointer"><a href="#">Host</a></li>
-            <li class="px-2 cursor-pointer"><a href="#"><button class="btn-primary flex gap-2 cursor-pointer">
-            Subscribe <i class="fa-solid fa-arrow-down -rotate-90"></i></button></a></li> 
+          <ul
+            class="absolute p-2 text-center rounded-lg right-0 top-2 w-fit bg-[#1a0b2e] shadow hidden group-hover:flex flex-col gap-2"
+          >
+            <li class="px-2 rounded-sm hover:bg-pink-500 cursor-pointer">
+              <a href="#about">About</a>
+            </li>
+            <li class="px-2 rounded-sm hover:bg-pink-500 cursor-pointer">
+              <a href="#episodes">Episodes</a>
+            </li>
+            <li class="px-2 rounded-sm hover:bg-pink-500 cursor-pointer">
+              <a href="#host">Host</a>
+            </li>
+            <li class="px-2 cursor-pointer">
+              <a href="#"
+                ><button class="btn-primary flex gap-2 cursor-pointer">
+                  Subscribe
+                  <i class="fa-solid fa-arrow-down -rotate-90"></i></button
+              ></a>
+            </li>
           </ul>
         </div>
       </nav>
       <!-- Hero section -->
-      <section class="bg-[url('./assets/hero-bg.png')] bg-cover bg-center bg-no-repeat border-t-2 border-gray-700 flex flex-col justify-center items-center gap-3 py-20 px-7 text-center">
+      <section
+        class="bg-[url('./assets/hero-bg.png')] bg-cover bg-center bg-no-repeat border-t-2 border-gray-700 flex flex-col justify-center items-center gap-3 py-20 px-7 text-center"
+      >
         <!-- hero icon -->
         <div class="mb-3 relative">
-          <div class="bg-[url('./assets/hero-circle.png')] bg-contain bg-center bg-no-repeat w-[200px] h-[200px] p-7 flex justify-center items-center md:w-[250px] md:h-[250px]">
-            <img class="w-16 md:w-20" src="./assets/microphone.png" alt="" srcset="">
+          <div
+            class="bg-[url('./assets/hero-circle.png')] bg-contain bg-center bg-no-repeat w-[200px] h-[200px] p-7 flex justify-center items-center md:w-[250px] md:h-[250px]"
+          >
+            <img
+              class="w-16 md:w-20"
+              src="./assets/microphone.png"
+              alt=""
+              srcset=""
+            />
           </div>
-          <p class="absolute top-2 right-2 shadow-lg/50 shadow-[#1a0b2e] w-fit text-black font-semibold bg-green-400 px-3 py-1 rounded-3xl text-[10px] md:text-sm lg:text-[16px]">NEW</p>
+          <p
+            class="absolute top-2 right-2 shadow-lg/50 shadow-[#1a0b2e] w-fit text-black font-semibold bg-green-400 px-3 py-1 rounded-3xl text-[10px] md:text-sm lg:text-[16px]"
+          >
+            NEW
+          </p>
         </div>
-         <!-- hero heading -->
+        <!-- hero heading -->
         <div>
-          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold lg:font-extrabold">TechWave</h1>
+          <h1
+            class="text-3xl md:text-4xl lg:text-5xl font-bold lg:font-extrabold"
+          >
+            TechWave
+          </h1>
         </div>
         <!-- hero para -->
         <div>
-          <p class="text-sm text-gray-300 md:text-[16px] lg:text-[18px]">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+          <p class="text-sm text-gray-300 md:text-[16px] lg:text-[18px]">
+            Your daily dose of tech insights, productivity hacks, and personal
+            growth
+          </p>
         </div>
         <!-- hero button -->
         <div class="flex justify-center items-center gap-3 md:gap-4 lg:gap-5">
-          <button class="btn-primary flex justify-center items-center gap-3 text-sm md:text-[16px] lg:text-[18px]"><img src="./assets/spotify.png" alt="">Listen on Spotify</button>
-          <button class="text-green-500 flex justify-center items-center gap-3 border-2 border-green-500 py-2 px-4 rounded-4xl text-sm md:text-[16px] lg:text-[18px]"><img src="./assets/message.png" alt=""><a href="#">Subscribe</a></button>
+          <button
+            class="btn-primary flex justify-center items-center gap-3 text-sm md:text-[16px] lg:text-[18px]"
+          >
+            <img src="./assets/spotify.png" alt="" />Listen on Spotify
+          </button>
+          <button
+            class="text-green-500 flex justify-center items-center gap-3 border-2 border-green-500 py-2 px-4 rounded-4xl text-sm md:text-[16px] lg:text-[18px]"
+          >
+            <img src="./assets/message.png" alt="" /><a href="#">Subscribe</a>
+          </button>
         </div>
       </section>
     </header>
-    
-    <main></main>
+    <!-- Main Section -->
+    <main>
+      <!-- About Section -->
+      <section id="about"
+        class="text-center flex flex-col gap-3 justify-center items-center pt-4 pb-20 px-3"
+      >
+        <!-- About Section para -->
+        <div class="md:w-3/4 p-2">
+          <h2
+            class="text-2xl md:text-3xl lg:text-4xl font-semibold md:font-bold lg:font-extrabold"
+          >
+            About the Podcast
+          </h2>
+          <p class="text-sm md:text-[16px] text-gray-400">
+            TechWave is your go-to podcast for staying ahead in the fast-paced
+            world of technology. We break down complex topics into digestible
+            insights, explore productivity strategies that actually work, and
+            share stories of personal growth from industry leaders. <br /><br />
+            Join thousands of young professionals and tech enthusiasts who start
+            their day with TechWave.
+          </p>
+        </div>
+        <!-- About section cards -->
+        <div class="grid lg:flex lg:justify-around grid-cols-2 md:grid-flow-col w-3/4 justify-items-center gap-4 px-6 border-t-1 border-gray-600 pt-10">
+          <!-- cards -->
+          <div class="flex flex-col justify-center items-center gap-2 w-fit p-1">
+            <h3 class="text-3xl font-extrabold text-green-400">150K+</h3>
+            <p class="text-sm text-gray-400 uppercase">MONTHLY LISTENERS</p>
+          </div>
+          <div class="flex flex-col justify-center items-center gap-2 w-fit p-1">
+            <h3 class="text-3xl font-extrabold text-green-400">200+</h3>
+            <p class="text-sm text-gray-400 uppercase">Episodes Published</p>
+          </div>
+          <div class="flex flex-col justify-center items-center gap-2 w-fit p-1">
+            <h3 class="text-3xl font-extrabold text-green-400">4.9★</h3>
+            <p class="text-sm text-gray-400 uppercase">Average Rating</p>
+          </div>
+          <div class="flex flex-col justify-center items-center gap-2 w-fit p-1">
+            <h3 class="text-3xl font-extrabold text-green-400">50+</h3>
+            <p class="text-sm text-gray-400 uppercase">Industry Experts</p>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
